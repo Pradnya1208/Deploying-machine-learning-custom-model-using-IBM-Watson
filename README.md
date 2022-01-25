@@ -31,7 +31,8 @@ In this project, we will mainly focus on model deployment.
 For more details on Machine Learning Model that we used for this project are [here](https://github.com/Pradnya1208/Telecom-Customer-Churn-prediction)
 
 
-
+## Watson Machine Learning:
+IBM Watson Machine Learning is a full-service IBM Cloud offering that makes it easy for developers and data scientists to work together to integrate predictive capabilities with their applications.
 
 
 
