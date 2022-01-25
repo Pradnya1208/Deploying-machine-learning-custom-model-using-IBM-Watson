@@ -27,7 +27,10 @@ In this project we’ll learn how to:
 
 <br>
 In this project, we will mainly focus on model deployment.
+
 For more details on Machine Learning Model that we used for this project are [here](https://github.com/Pradnya1208/Telecom-Customer-Churn-prediction)
+
+
 
 
 
