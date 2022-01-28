@@ -36,7 +36,7 @@ IBM Watson Machine Learning is a full-service IBM Cloud offering that makes it e
 
 
 
-## Import and install dependencies:
+## 1) Import and install dependencies:
 #### install IBM Watson Machine Learning
 
 ```
@@ -48,7 +48,7 @@ from ibm_watson_machine_learning import APIClient
 import json 
 import numpy as np
 ```
-## Create deployment space:
+## 2) Create deployment space:
 - go to `cloud.ibm.com` and login
 - go to `catelog`
 <br>
@@ -91,7 +91,7 @@ You will be able to see your space in `deployments`
 <img src="https://github.com/Pradnya1208/Deploying-machine-learning-custom-model-using-IBM-Watson/blob/master/images/step5.PNG?raw=true" width="60%">
 
 
-## Authentication:
+## 3) Authentication:
 ```
 from ibm_watson_machine_learning import APIClient
 wml_credentials = {
@@ -123,7 +123,7 @@ Other way to get the space ID:
 ```
 client.set.default_space(space_uid)
 ```
-## Check the software specifications:
+## 4) Check the software specifications:
 ```
 client.software_specifications.list()
 ```
@@ -183,11 +183,11 @@ caffe-ibm_1.0-py3.6            8d863266-7927-4d1e-97d7-56a7f4c0a19b  base
 -----------------------------  ------------------------------------  ----
 Note: Only first 50 records were displayed. To display more use 'limit' parameter.
 ```
-## Setting the python environment:
+## 5) Setting the python environment:
 ```
 software_spec_uid = client.software_specifications.get_uid_by_name("default_py3.8")
 ```
-## Storing the model in space:
+## 6) Storing the model in space:
 ```
 model_details = client.repository.store_model(model=bestAdaModFitted2, meta_props={
 client.repository.ModelMetaNames.NAME: "Customer churn prediction",
@@ -196,7 +196,7 @@ client.repository.ModelMetaNames.SOFTWARE_SPEC_UID: software_spec_uid})
 
 model_id = client.repository.get_model_uid(model_details)
 ```
-## Model deployment:
+## 7) Model deployment:
 The model can be deployed in 2 ways:
 ### Using `deploy` option:
 - go to `deployments` -> `spaces` -> select you space name -> select the `deploy` option infront of model
@@ -220,7 +220,7 @@ deployment = client.deployments.create(
 deployment
 ```
 
-## Prediction using deployed model:
+## 8) Prediction using deployed model:
 For prediction also we can use 2 ways:
 ### Using UID:
 ```
@@ -321,9 +321,8 @@ Customer will likely to continue with her subscription (won't churn)
 
 
 
-## Implementation:
-
-**Libraries:**  `NumPy`  `pandas` `sklearn`  `Matplotlib` `tensorflow` `keras` `plotly`
+## Licences:
+`MIT License`
 
 
 ### Learnings:
