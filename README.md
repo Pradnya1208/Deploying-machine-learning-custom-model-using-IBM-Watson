@@ -73,6 +73,7 @@ import numpy as np
 <br>
 
 - go to `deployments` and select `new deployment space`
+
 <br>
 
 <img src="https://github.com/Pradnya1208/Deploying-machine-learning-custom-model-using-IBM-Watson/blob/master/images/step4.PNG?raw=true" width="80%">
@@ -82,6 +83,7 @@ import numpy as np
 - `name` the deployment space and select the `machine learning service` that you've created in previous steps.
 
 <br>
+
 You will be able to see your space in `deployments`
 
 <br>
