@@ -114,7 +114,7 @@ client = APIClient(wml_credentials)
 space_uid = guid_from_space_name(client, "DeploymentSpace")
 print("space_uid : ", space_uid)
 ```
-Other way to get the soace ID:
+Other way to get the space ID:
 
 - go to `deployments` -> `manage`
 <br>
