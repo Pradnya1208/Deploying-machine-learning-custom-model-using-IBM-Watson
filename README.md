@@ -88,7 +88,7 @@ You will be able to see your space in `deployments`
 
 <br>
 
-<img src="https://github.com/Pradnya1208/Deploying-machine-learning-custom-model-using-IBM-Watson/blob/master/images/step5.PNG?raw=true" width="80%">
+<img src="https://github.com/Pradnya1208/Deploying-machine-learning-custom-model-using-IBM-Watson/blob/master/images/step5.PNG?raw=true" width="60%">
 
 
 ## Authentication:
